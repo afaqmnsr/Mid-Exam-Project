@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Afaq Mansoor Khan S/O Amanullah Khan</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="menu.css">
+	<script src="Afaqjavascript.js"></script>
+	<script src="jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Afaqstylesheet.css">
+
+<style type="text/css">
+	
+
+</style>
+<body>
+
+	<nav class="menu">
+		<a href="AfaqIndex.html" class="menulogo">Bachelors of Software Engineering</a>
+		<span class="topmenumobile" onclick="toggleFunction()"> * </span>
+		<ul class="menuul" id="menuul">
+			<li><a href="Afaq.html"> Afaq </a></li>
+			<li><a href="AfaqFaculty.html"> Faculty Page </a></li>
+			<li><a href="AfaqNew.html"> Add New Faculty </a></li>
+		</ul>
+	</nav>
+<div style="max-width: 600px;margin:0 auto;">
+
+	<div style="text-align: center;">
+		<a href="#img1" >
+        <img  class="thumb" src="img.png">
+    	</a>
+
+		<form action="/action_page.php" class="form-inline">
+		  
+		  <input type="text" id="name" name="name" placeholder="Name"  pattern="\b(\w*[Aa][Ff][Aa][Qq]\w*)\b"><br>
+		  <h4 id="h41" style="display: none;"></h4>
+		  <input type="text" id="qual" name="qual" placeholder="CGPA" ><br>
+		  <h4 id="h42" style="display: none;"></h4>
+		  <input type="text" id="lname" name="lname" placeholder="Email"  ><br><br>
+		  
+		</form> 
+
+		<h3 style="margin-top: 20px;" id="animate" >Apply Animation</h3>
+	</div>
+
+	<textarea class="container-coordinatorPicMsg2">
+	</textarea>
+
+	<textarea class="container-coordinatorPicMsg2" >
+	</textarea>
+
+
+</div>
+	
+
+	<footer style="">
+	  <p>Copyright - Afaq Mansoor Khan - BSSE - 2020</p>
+	</footer>
+
+</body>
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+	  $("#animate").click(function(){
+	    
+	 
+
+	  var val = $("#name").val();
+	  var val2 = $("#lname").val();
+
+	  
+
+	  $("#name").hide();
+	   $("#lname").hide();
+
+	    $("#h41").html(val);
+	    $("#h42").html(val2);
+
+	    $("#h41").show();
+	    $("#h42").show();
+
+	    $("#h41").animate({
+                fontSize: "40px"
+            }, 1000);
+	    $("#h42").animate({
+                fontSize: "40px"
+            }, 1000);
+ 	});
+  
+	});
+</script>
+</html>
